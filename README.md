@@ -3,6 +3,8 @@
 ### What is this?
 This repository processes COVID data by Zip Code from New York City into one file with historical numbers. That way, we can see where cases are increasing, decreasing, and what historical trends looked like by zipcode.
 
+I use it to create https://public.tableau.com/profile/michael.irvine7352#!/vizhome/NYCCovidData-DailybyZipcode/NYCCOVIDDatabyZipCode, a Tableau Public dashboard.
+
 ### Quickstart
 
 1. Clone https://github.com/nychealth/coronavirus-data to create a `coronavirus-data` folder
