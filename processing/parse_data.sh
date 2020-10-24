@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[ -z "$1" ] && awk 'BEGIN{FS=OFS=","}{print "date" OFS $0}' <(head -1 ../coronavirus-data/data-by-modzcta.csv) > output.csv
+awk 'BEGIN{FS=OFS=","}{print "date" OFS $0}' <(head -1 ../coronavirus-data/data-by-modzcta.csv) > output.csv
 cd ../coronavirus-data
 git log $1 --pretty=format:"%h" | while read line ; do
 	git checkout $line
@@ -12,4 +12,4 @@ git checkout -- . ;
 git checkout master ;
 cd ../processing ;
 
-cat output_* >> output.csv && rm output_*
+cat output_* >> output.csv
